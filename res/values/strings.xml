@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MoneyManager家庭理财</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+    <string name="title_activity_user_registe">UserRegisteActivity</string>
+    <string name="title_activity_data_save">DataSaveActivity</string>
+    <string name="title_activity_shouru_or_zhichu_type">ShouruOrZhichuTypeActivity</string>
+    <string name="title_activity_zhi_chu_type">ZhiChuTypeActivity</string>
+    <string name="title_activity_add_account">AddAccountActivity</string>
+    <string name="title_activity_ge_ren_zhong_xin">GeRenZhongXinActivity</string>
+    <string name="title_activity_zhuan_zhang">ZhuanZhangActivity</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.briup.activity.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="#d3d3d3"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_rb_jizhang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/jizhang_choose"
+            android:gravity="center"
+            android:text="记账"
+            android:textColor="#00d5b9" />
+
+        <RadioButton
+            android:id="@+id/main_rb_baobiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/baobiao_choose"
+            android:gravity="center"
+            android:text="报表"
+            android:textColor="#111111" />
+
+        <RadioButton
+            android:id="@+id/main_rb_zijin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/zijin_choose"
+            android:gravity="center"
+            android:text="资金"
+            android:textColor="#111111" />
+
+        <RadioButton
+            android:id="@+id/main_rb_gengduo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/gengduo_choose"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="#111111" />
+    </RadioGroup>
+
+</RelativeLayout>

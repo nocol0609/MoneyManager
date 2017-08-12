@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/home_background" >
+        <ImageView 
+            android:id="@+id/addYuSuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_2"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/addYuSuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="添加预算"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/calendar_iv_settime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home_calender" />
+        <TextView 
+            android:id="@+id/tv_riqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="6"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+         >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#6ce2e4"
+            >
+            <TextView 
+                android:id="@+id/tv_yuefenshouru"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1月收入"
+                android:textColor="#ffffff"
+                />
+            <TextView 
+                android:id="@+id/xianshi_tv_shouruAccount"
+                android:layout_below="@id/tv_yuefenshouru"
+                android:layout_marginLeft="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="#ffffff"
+                />
+            
+             <TextView 
+                android:id="@+id/tv_yuefenzhichu"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1月支出"
+                android:textColor="#ffffff"
+                />
+            <TextView 
+                android:id="@+id/xianshi_tv_zhichu"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_yuefenzhichu"
+                android:layout_marginRight="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/jizhang_iv_presspen"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/iv_bg"
+            android:scaleType="center"
+            android:src="@drawable/ic_beizhu_pen" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/jizhang_lv_xianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

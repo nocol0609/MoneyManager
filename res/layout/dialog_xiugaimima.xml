@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_xiugaimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_xiugaimima"
+            android:text="修改密码"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/xiugai_et_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/xiugai_et_querenmima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="请再次输入密码" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_marginLeft="180dp"
+            android:id="@+id/xiugaimima_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:text="取消"
+            android:textColor="#199f90" />
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/xiugaimima_btn_cancel"
+            android:id="@+id/xiugaimima_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:text="保存"
+            android:textColor="#199f90" />
+    </RelativeLayout>
+
+</LinearLayout>

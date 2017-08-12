@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="我的账户"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/zijin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="结余"
+            />
+        <TextView
+            android:id="@+id/zijin_tv_jieyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/zijin_tv" />
+        
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/biankuang_zhuanzhang"
+            android:text="转账"
+            android:textColor="#00d5b9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zijin_rl_tianjiazhanghu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/biankuang_tianjiazijin"
+        android:layout_marginTop="340dp"
+         >
+
+        <ImageView
+            android:id="@+id/tianjia_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#aaaaaa"
+            android:src="@drawable/ic_add_2" />
+
+        <TextView
+            android:id="@+id/zijin_tv_tianjiazhanghu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tianjia_iv"
+            android:text="添加资金账户" 
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
